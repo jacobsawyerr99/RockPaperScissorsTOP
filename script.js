@@ -21,21 +21,21 @@ function playRound(playerSelection, pcSelection)
 
     if (playerSelection == pcSelection)     // tie between player and computer
     {
-        
+        return "Game is a tie."
     }
     else if(        // player wins
         (playerSelection == "paper" && pcSelection == "rock") ||
         (playerSelection == "rock" && pcSelection == "scissors") ||
         (playerSelection == "scissors" && pcSelection == "paper"))
     {
-
+        return "You Win."
     }
     else if(        // computer wins
         (pcSelection == "paper" && playerSelection == "rock") ||
         (pcSelection == "rock" && playerSelection == "scissors") ||
         (pcSelection == "scissors" && playerSelection == "paper"))
     {
-
+        return "Computer Wins."
     }
 }
 
