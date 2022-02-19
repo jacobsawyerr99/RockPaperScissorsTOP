@@ -18,6 +18,25 @@ function playRound(playerSelection, pcSelection)
     // tests to ensure output of player and computer are correct
     console.log(playerSelection);
     console.log(pcSelection);
+
+    if (playerSelection == pcSelection)     // tie between player and computer
+    {
+        
+    }
+    else if(        // player wins
+        (playerSelection == "paper" && pcSelection == "rock") ||
+        (playerSelection == "rock" && pcSelection == "scissors") ||
+        (playerSelection == "scissors" && pcSelection == "paper"))
+    {
+
+    }
+    else if(        // computer wins
+        (pcSelection == "paper" && playerSelection == "rock") ||
+        (pcSelection == "rock" && playerSelection == "scissors") ||
+        (pcSelection == "scissors" && playerSelection == "paper"))
+    {
+
+    }
 }
 
 var playerSelection = prompt("Choose Rock, Paper, or Scissors").toLowerCase();
